@@ -1,9 +1,11 @@
-name: Hello,World
-on: push
+name: Hello, World  # "Hello, World" の間にスペースを追加
+
+on: 
+  push:  # push イベントでトリガー
 
 jobs:
-  my_first_job :
+  my_first_job:
     name: Greeting
-    runs-on: ubuntu-latest
-    steps :
-      -run: echo "hello, world!"
+    runs-on: ubuntu-latest  # runs-on と ubuntu-latest の間にスペースを追加
+    steps:
+      - run: echo "hello, world!"  # run の前にスペースを追加
